@@ -1,0 +1,137 @@
+.container{
+
+        display:grid;
+        justify-content: center;
+        width:100%;
+        height: 100vh;
+        grid-template-rows:0.08fr 1fr 0.75fr;
+        grid-template-columns:  1fr;
+        grid-template-areas: 
+        "hd"
+        "main"
+        "mn"
+       
+
+
+    }
+    body{
+        background-image: url("https://images.unsplash.com/photo-1584466990376-09422a2b033a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+        background-color: black;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+
+
+    }
+    #main{
+        display: flex;
+        flex-direction: column-reverse;
+   /* border: solid black;*/
+   color: rgb(221, 221, 221);
+
+   text-shadow:2px 2px grey;
+    grid-area: main;
+    vertical-align: text-bottom;
+    }
+
+    #menu{
+        
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        grid-area: main;
+        justify-content: center;
+        
+        grid-area: mn;
+       
+    }
+  
+    footer{
+        color: rgba(202, 202, 202);
+
+    }
+    #header{
+        background-color: rgba(202, 202, 202);
+        grid-area: hd;
+        overflow: hidden;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 90%;
+       
+        
+    }
+
+    #header a {
+        float: right;
+        font-size: 1.5vh;
+        color: black;
+        text-align: center;
+        padding: 8px 13px;
+        text-decoration: none;
+      }
+
+
+      #header a:hover {
+        background-color: rgb(23, 75, 110);
+        color: rgba(202, 202, 202);
+      }
+   
+    .dropbtn {
+        width: 4cm;
+        margin: 7px;
+        background-color:rgba(202, 202, 202);
+        color: black;
+        border: none;
+        outline: none;  
+        padding: 16px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {    
+    background-color: rgb(23, 75, 110);
+    color: rgba(202, 202, 202);
+  }
+
+  /* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    float: left;
+    
+
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    opacity: 70%;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}  
+    
+
+
+
